@@ -32,6 +32,10 @@ public abstract class BaseEntity {
     @LastModifiedBy
     private String modifiedBy;
 
+    public Long getId() {
+        return id;
+    }
+
     public Date getCreatedDate() {
         return createdDate;
     }
