@@ -16,6 +16,10 @@
     <link href="<c:url value='/template/admin/vendor/datatables/dataTables.bootstrap4.css' />" rel="stylesheet" type="text/css" media="all"/>
     <!-- Custom styles for this template-->
     <link href="<c:url value='/template/admin/css/sb-admin.css' />" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="<c:url value='/template/admin/css/checkbox.css' />" rel="stylesheet" type="text/css" media="all"/>
+    <script src="<c:url value='/template/admin/vendor/jquery/jquery.min.js' />"></script>
+    <script src="<c:url value='/template/admin/paging/jquery.twbsPagination.js' />"></script>
 </head>
 <body id="page-top">
 <!-- header -->
@@ -60,19 +64,15 @@
 </div>
 
 <!-- Bootstrap core JavaScript-->
-<script type="text/javascript" src="<c:url value='/template/admin/vendor/jquery/jquery.min.js' />"></script>
 <script type="text/javascript" src="<c:url value='/template/admin/vendor/bootstrap/js/bootstrap.bundle.min.js' />"></script>
 <!-- Core plugin JavaScript-->
 <script type="text/javascript" src="<c:url value='/template/admin/vendor/jquery-easing/jquery.easing.min.js' />"></script>
-
 <!-- Page level plugin JavaScript-->
 <script type="text/javascript" src="<c:url value='/template/admin/vendor/chart.js/Chart.min.js' />"></script>
 <script type="text/javascript" src="<c:url value='/template/admin/vendor/datatables/jquery.dataTables.js' />"></script>
 <script type="text/javascript" src="<c:url value='/template/admin/vendor/datatables/dataTables.bootstrap4.js' />"></script>
-
 <!-- Custom scripts for all pages-->
 <script type="text/javascript" src="<c:url value='/template/admin/js/sb-admin.min.js' />"></script>
-
 <!-- Demo scripts for this page-->
 <script type="text/javascript" src="<c:url value='/template/admin/js/demo/datatables-demo.js' />"></script>
 <script type="text/javascript" src="<c:url value='/template/admin/js/demo/chart-area-demo.js' />"></script>

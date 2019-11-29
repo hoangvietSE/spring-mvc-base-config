@@ -14,7 +14,7 @@ public class AbstractDTO<T> {
 	private long[] ids;
 	private List<T> listResult = new ArrayList<>();
 	private Integer page;
-	private Integer maxPageItem;
+	private Integer limit;
 	private Integer totalPage;
 	private Integer totalItem;
 	private String sortName;
@@ -71,12 +71,6 @@ public class AbstractDTO<T> {
 	public void setPage(Integer page) {
 		this.page = page;
 	}
-	public Integer getMaxPageItem() {
-		return maxPageItem;
-	}
-	public void setMaxPageItem(Integer maxPageItem) {
-		this.maxPageItem = maxPageItem;
-	}
 	public Integer getTotalPage() {
 		return totalPage;
 	}
@@ -101,28 +95,24 @@ public class AbstractDTO<T> {
 	public void setSortBy(String sortBy) {
 		this.sortBy = sortBy;
 	}
-
 	public String getAlert() {
 		return alert;
 	}
-
 	public void setAlert(String alert) {
 		this.alert = alert;
 	}
-
 	public String getMessage() {
 		return message;
 	}
-
 	public void setMessage(String message) {
 		this.message = message;
 	}
-
 	public String getType() {
 		return type;
 	}
-
 	public void setType(String type) {
 		this.type = type;
 	}
+	public Integer getLimit() { return limit; }
+	public void setLimit(Integer limit) { this.limit = limit; }
 }

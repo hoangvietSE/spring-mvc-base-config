@@ -15,9 +15,9 @@
               http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:component-scan
-            base-package="com.soict.hoangviet.controller"/>
+            base-package="com.soict.hoangviet.controller, com.soict.hoangviet.api"/>
 
-    <mvc:annotation-driven/>
+    <mvc:annotation-driven />
 
     <bean
             class="org.springframework.web.servlet.view.InternalResourceViewResolver">
