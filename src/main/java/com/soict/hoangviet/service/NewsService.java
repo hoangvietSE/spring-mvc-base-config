@@ -12,4 +12,6 @@ public interface NewsService {
     List<NewsDTO> findAll(PageRequest pageRequest);
 
     long count();
+
+    NewsDTO findOne(Long id);
 }

@@ -9,7 +9,15 @@
     <title>Danh sách bài viết</title>
 </head>
 <body>
-<div class="container-fluid">
+<div>
+    <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="#">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Tables</li>
+    </ol>
+
     <div class="card mb-3">
         <div class="card-header">
             <i class="fas fa-table"></i>
@@ -38,10 +46,11 @@
                                     <div class="table-btn-controls">
                                         <div class="pull-right tableTools-container">
                                             <div class="dt-buttons btn-overlap btn-group">
+                                                <c:url var="editUrlNoId" value="/admin-news/edit"/>
                                                 <a flag="info"
                                                    class="dt-button buttons-colvis btn btn-white btn-primary btn-bold"
                                                    data-toggle="tooltip" title='Thêm bài viết'
-                                                   href='<c:url value="#"/>'> <span>
+                                                   href='${editUrlNoId}'> <span>
 													<i class="fa fa-plus-circle bigger-110 purple"></i>
 											</span>
                                                 </a>
@@ -78,13 +87,12 @@
                                                         <td>${item.shortDescription}</td>
                                                         <td>${item.content}</td>
                                                         <td width="20%">
-                                                            <c:url var="editURL" value="#">
-                                                                <c:param name="type" value="edit"/>
+                                                            <c:url var="editUrlById" value="/admin-news/edit">
                                                                 <c:param name="id" value="${item.id}"/>
                                                             </c:url>
                                                             <a class="btn btn-icon btn-sm btn-primary tip"
                                                                data-toggle="tooltip"
-                                                               title="Cập nhật bài viết" href='${editURL}'><i
+                                                               title="Cập nhật bài viết" href='${editUrlById}'><i
                                                                     class="fa fa-pencil" aria-hidden="true"></i>
                                                             </a>
                                                         </td>
@@ -110,6 +118,10 @@
             </form>
         </div>
     </div>
+
+    <p class="small text-center text-muted my-5">
+        <em>More table examples coming soon...</em>
+    </p>
 </div>
 <!-- /.main-content -->
 <script type="text/javascript">

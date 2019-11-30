@@ -32,9 +32,11 @@
     <!-- Sidebar -->
 
     <div class="content-wrapper">
-        <dec:body/>
+        <div class="container-fluid">
+            <dec:body/>
+        </div>
         <!-- footer -->
-        <%@ include file="/common/web/footer.jsp" %>
+        <%@ include file="/common/admin/footer.jsp" %>
         <!-- footer -->
     </div>
 </div>
