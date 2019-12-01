@@ -31,4 +31,9 @@ public class CategoryServiceImpl implements CategoryService {
         }
         return maps;
     }
+
+    @Override
+    public CategoryEntity findOneByCode(String code) {
+        return categoryRepository.findOneByCode(code);
+    }
 }

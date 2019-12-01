@@ -2,6 +2,7 @@
          pageEncoding="UTF-8" %>
 <%@ include file="/common/taglib.jsp" %>
 <c:url var="newsUrl" value="/admin-news/list"/>
+<c:url var="apiAdminNews" value="/api/admin-news"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +11,11 @@
 </head>
 <body>
 <div>
+    <c:if test="${not empty alert}">
+        <div class="alert alert-${alert}" id="alert">
+                ${message}
+        </div>
+    </c:if>
     <!-- Breadcrumbs-->
     <ol class="breadcrumb">
         <li class="breadcrumb-item">
@@ -24,11 +30,6 @@
             Data Table Example
         </div>
         <div class="card-body">
-            <c:if test="${not empty alert}">
-                <div class="alert alert-${alert}">
-                    <strong>${messageResponse}</strong>
-                </div>
-            </c:if>
             <form action="<c:url value='/admin-news/list'/>" id="formSubmit"
                   method="get">
                 <div class="main-content-inner">
@@ -54,7 +55,7 @@
 													<i class="fa fa-plus-circle bigger-110 purple"></i>
 											</span>
                                                 </a>
-                                                <button id="btnDelete" type="button" disabled
+                                                <button id="btnDelete" type="button" onclick="onConfirmDelete()"
                                                         class="dt-button buttons-html5 btn btn-white btn-primary btn-bold"
                                                         data-toggle="tooltip" title='Xóa bài viết'>
 												<span> <i class="fa fa-trash-o bigger-110 pink"></i>
@@ -125,6 +126,11 @@
 </div>
 <!-- /.main-content -->
 <script type="text/javascript">
+    $(document).ready(function () {
+        $("#alert").fadeTo(2000, 500).slideUp(500, function () {
+            $("#alert").slideUp(500);
+        });
+    });
     $(function () {
         var currentPage = ${model.page};
         var limit = ${model.limit};
@@ -143,29 +149,42 @@
         })
     });
 
+    function onConfirmDelete() {
+        swal({
+            title: "Xác nhận xóa",
+            text: "Bạn có chắc chắn muốn xóa hay không",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonClass: "btn-success",
+            cancelButtonClass: "btn-danger",
+            confirmButtonText: "Xác nhận",
+            cancelButtonText: "Hủy bỏ",
+        }).then(function(isConfirm) {
+            if (isConfirm) {
+                var ids = $('tbody input[type=checkbox]:checked').map(function () {
+                    return $(this).val();
+                }).get();
+                deleteNews(ids);
+            }
+        });
+    }
+
     $('#btnDelete').click(function () {
-        var data = {};
-        var ids = $('tbody input[type=checkbox]:checked').map(function () {
-            return $(this).val();
-        }).get();
-        data["ids"] = ids;
-        deleteNews(data);
     });
 
     function deleteNews(data) {
         $.ajax({
-            url: '${APIurl}',
+            url: '${apiAdminNews}',
             type: 'DELETE',
             contentType: 'application/json',
-            dataType: 'json',
             data: JSON.stringify(data),
-            success: function () {
-                window.location.href = "${NewsURL}?type=list&page=1&maxPageItem=5&sortName=title&sortBy=ASC&message=delete_success";
+            success: function (result) {
+                window.location.href = "${NewsURL}?page=1&limit=5&message=delete_success";
             },
-            error: function () {
-                window.location.href = "${NewsURL}?type=list&page=1&maxPageItem=5&sortName=title&sortBy=ASC&message=delete_error";
+            error: function (error) {
+                window.location.href = "${NewsURL}?page=1&limit=5&message=delete_error";
             }
-        })
+        });
     }
 </script>
 </body>

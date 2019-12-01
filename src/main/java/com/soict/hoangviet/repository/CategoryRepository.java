@@ -6,4 +6,5 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface CategoryRepository extends JpaRepository<CategoryEntity, Long> {
+    CategoryEntity findOneByCode(String code);
 }

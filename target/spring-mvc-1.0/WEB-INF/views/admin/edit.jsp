@@ -101,10 +101,10 @@
             dataType: 'json',
             data: JSON.stringify(data),
             success: function (result) {
-                window.location.href = "${newsUrl}?page=1&limit=5";
+                window.location.href = "${newsUrl}?page=1&limit=5&message=update_success";
             },
             error: function (error) {
-                window.location.href = "${newsUrl}?page=1&limit=5";
+                window.location.href = "${newsUrl}?page=1&limit=5&message=update_error";
             }
         });
     }
@@ -117,10 +117,10 @@
             dataType: 'json',
             data: JSON.stringify(data),
             success: function (result) {
-                window.location.href = "${newsUrl}?page=1&limit=5";
+                window.location.href = "${newsUrl}?page=1&limit=5&message=insert_success";
             },
             error: function (error) {
-                window.location.href = "${newsUrl}?page=1&limit=5";
+                window.location.href = "${newsUrl}?page=1&limit=5&message=insert_error";
             }
         });
     }

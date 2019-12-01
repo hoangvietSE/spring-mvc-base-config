@@ -5,7 +5,7 @@ import com.soict.hoangviet.entity.NewsEntity;
 import org.springframework.stereotype.Component;
 
 @Component
-public class NewsConverter implements BaseConverter<NewsDTO, NewsEntity> {
+public class NewsConverter implements NewsBaseConverter<NewsDTO, NewsEntity> {
 
     @Override
     public NewsDTO toDTO(NewsEntity entity) {
@@ -27,6 +27,16 @@ public class NewsConverter implements BaseConverter<NewsDTO, NewsEntity> {
         newsEntity.setContent(dto.getContent());
         newsEntity.setThumbnail(dto.getThumbnail());
         newsEntity.setContent(dto.getContent());
+        newsEntity.setShortDescription(dto.getShortDescription());
         return newsEntity;
+    }
+
+    @Override
+    public NewsEntity toEntity(NewsEntity entity, NewsDTO dto) {
+        entity.setContent(dto.getContent());
+        entity.setThumbnail(dto.getThumbnail());
+        entity.setTitle(dto.getTitle());
+        entity.setShortDescription(dto.getShortDescription());
+        return entity;
     }
 }

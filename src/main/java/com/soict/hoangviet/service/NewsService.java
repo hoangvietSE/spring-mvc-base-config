@@ -14,4 +14,8 @@ public interface NewsService {
     long count();
 
     NewsDTO findOne(Long id);
+
+    NewsDTO save(NewsDTO newsDTO);
+
+    void delete(Long[] ids);
 }
