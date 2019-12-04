@@ -62,9 +62,12 @@
                 <a class="dropdown-item" href="#">Xin chào, <%=SecurityUtil.getPrincipal().getFullName()%>
                 </a>
                 <a class="dropdown-item" href="#" data-toggle="modal"
-                   data-target="#logoutModal">Logout</a>
+                   data-target="#logoutModal" id="logout">Logout</a>
             </div>
         </li>
     </ul>
 
 </nav>
+
+<script type="text/javascript">
+</script>

@@ -66,7 +66,7 @@
                                     <th tabindex="0" aria-controls="dataTable" rowspan="1"
                                         colspan="1">
                                         <label class="customcheck">
-                                            <input type="checkbox" checked="checked">
+                                            <input type="checkbox" checked="checked" id="checkAll">
                                             <span class="checkmark"></span>
                                         </label>
                                     </th>
@@ -122,25 +122,10 @@
                                            class="btn btn-icon btn-sm btn-primary deleteDialog tip">
                                             <i class="fa fa-pencil-square-o"></i>
                                         </a>
-                                    </td>
-                                </tr>
-                                <tr role="row" class="even">
-                                    <td>
-                                        <label class="customcheck">
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </td>
-                                    <td class="sorting_1">Angelica Ramos</td>
-                                    <td>Chief Executive Officer (CEO)</td>
-                                    <td>London</td>
-                                    <td>47</td>
-                                    <td>2009/10/09</td>
-                                    <td>$1,200,000</td>
-                                    <td>
+
                                         <a href="#" data-id="85"
-                                           class="btn btn-icon btn-sm btn-primary deleteDialog tip">
-                                            <i class="fa fa-pencil-square-o"></i>
+                                           class="btn btn-icon btn-sm btn-danger deleteDialog tip">
+                                            <i class="fa fa-trash"></i>
                                         </a>
                                     </td>
                                 </tr>
@@ -162,25 +147,9 @@
                                            class="btn btn-icon btn-sm btn-primary deleteDialog tip">
                                             <i class="fa fa-pencil-square-o"></i>
                                         </a>
-                                    </td>
-                                </tr>
-                                <tr role="row" class="even">
-                                    <td>
-                                        <label class="customcheck">
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </td>
-                                    <td class="sorting_1">Angelica Ramos</td>
-                                    <td>Chief Executive Officer (CEO)</td>
-                                    <td>London</td>
-                                    <td>47</td>
-                                    <td>2009/10/09</td>
-                                    <td>$1,200,000</td>
-                                    <td>
                                         <a href="#" data-id="85"
-                                           class="btn btn-icon btn-sm btn-primary deleteDialog tip">
-                                            <i class="fa fa-pencil-square-o"></i>
+                                           class="btn btn-icon btn-sm btn-danger deleteDialog tip">
+                                            <i class="fa fa-trash"></i>
                                         </a>
                                     </td>
                                 </tr>
@@ -202,25 +171,9 @@
                                            class="btn btn-icon btn-sm btn-primary deleteDialog tip">
                                             <i class="fa fa-pencil-square-o"></i>
                                         </a>
-                                    </td>
-                                </tr>
-                                <tr role="row" class="even">
-                                    <td>
-                                        <label class="customcheck">
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </td>
-                                    <td class="sorting_1">Angelica Ramos</td>
-                                    <td>Chief Executive Officer (CEO)</td>
-                                    <td>London</td>
-                                    <td>47</td>
-                                    <td>2009/10/09</td>
-                                    <td>$1,200,000</td>
-                                    <td>
                                         <a href="#" data-id="85"
-                                           class="btn btn-icon btn-sm btn-primary deleteDialog tip">
-                                            <i class="fa fa-pencil-square-o"></i>
+                                           class="btn btn-icon btn-sm btn-danger deleteDialog tip">
+                                            <i class="fa fa-trash"></i>
                                         </a>
                                     </td>
                                 </tr>
@@ -242,25 +195,9 @@
                                            class="btn btn-icon btn-sm btn-primary deleteDialog tip">
                                             <i class="fa fa-pencil-square-o"></i>
                                         </a>
-                                    </td>
-                                </tr>
-                                <tr role="row" class="even">
-                                    <td>
-                                        <label class="customcheck">
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </td>
-                                    <td class="sorting_1">Angelica Ramos</td>
-                                    <td>Chief Executive Officer (CEO)</td>
-                                    <td>London</td>
-                                    <td>47</td>
-                                    <td>2009/10/09</td>
-                                    <td>$1,200,000</td>
-                                    <td>
                                         <a href="#" data-id="85"
-                                           class="btn btn-icon btn-sm btn-primary deleteDialog tip">
-                                            <i class="fa fa-pencil-square-o"></i>
+                                           class="btn btn-icon btn-sm btn-danger deleteDialog tip">
+                                            <i class="fa fa-trash"></i>
                                         </a>
                                     </td>
                                 </tr>
@@ -282,25 +219,9 @@
                                            class="btn btn-icon btn-sm btn-primary deleteDialog tip">
                                             <i class="fa fa-pencil-square-o"></i>
                                         </a>
-                                    </td>
-                                </tr>
-                                <tr role="row" class="even">
-                                    <td>
-                                        <label class="customcheck">
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </td>
-                                    <td class="sorting_1">Angelica Ramos</td>
-                                    <td>Chief Executive Officer (CEO)</td>
-                                    <td>London</td>
-                                    <td>47</td>
-                                    <td>2009/10/09</td>
-                                    <td>$1,200,000</td>
-                                    <td>
                                         <a href="#" data-id="85"
-                                           class="btn btn-icon btn-sm btn-primary deleteDialog tip">
-                                            <i class="fa fa-pencil-square-o"></i>
+                                           class="btn btn-icon btn-sm btn-danger deleteDialog tip">
+                                            <i class="fa fa-trash"></i>
                                         </a>
                                     </td>
                                 </tr>
@@ -322,25 +243,9 @@
                                            class="btn btn-icon btn-sm btn-primary deleteDialog tip">
                                             <i class="fa fa-pencil-square-o"></i>
                                         </a>
-                                    </td>
-                                </tr>
-                                <tr role="row" class="even">
-                                    <td>
-                                        <label class="customcheck">
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </td>
-                                    <td class="sorting_1">Angelica Ramos</td>
-                                    <td>Chief Executive Officer (CEO)</td>
-                                    <td>London</td>
-                                    <td>47</td>
-                                    <td>2009/10/09</td>
-                                    <td>$1,200,000</td>
-                                    <td>
                                         <a href="#" data-id="85"
-                                           class="btn btn-icon btn-sm btn-primary deleteDialog tip">
-                                            <i class="fa fa-pencil-square-o"></i>
+                                           class="btn btn-icon btn-sm btn-danger deleteDialog tip">
+                                            <i class="fa fa-trash"></i>
                                         </a>
                                     </td>
                                 </tr>
@@ -361,6 +266,154 @@
                                         <a href="#" data-id="85"
                                            class="btn btn-icon btn-sm btn-primary deleteDialog tip">
                                             <i class="fa fa-pencil-square-o"></i>
+                                        </a>
+                                        <a href="#" data-id="85"
+                                           class="btn btn-icon btn-sm btn-danger deleteDialog tip">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>
+                                        <label class="customcheck">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td class="sorting_1">Angelica Ramos</td>
+                                    <td>Chief Executive Officer (CEO)</td>
+                                    <td>London</td>
+                                    <td>47</td>
+                                    <td>2009/10/09</td>
+                                    <td>$1,200,000</td>
+                                    <td>
+                                        <a href="#" data-id="85"
+                                           class="btn btn-icon btn-sm btn-primary deleteDialog tip">
+                                            <i class="fa fa-pencil-square-o"></i>
+                                        </a>
+                                        <a href="#" data-id="85"
+                                           class="btn btn-icon btn-sm btn-danger deleteDialog tip">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>
+                                        <label class="customcheck">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td class="sorting_1">Angelica Ramos</td>
+                                    <td>Chief Executive Officer (CEO)</td>
+                                    <td>London</td>
+                                    <td>47</td>
+                                    <td>2009/10/09</td>
+                                    <td>$1,200,000</td>
+                                    <td>
+                                        <a href="#" data-id="85"
+                                           class="btn btn-icon btn-sm btn-primary deleteDialog tip">
+                                            <i class="fa fa-pencil-square-o"></i>
+                                        </a>
+                                        <a href="#" data-id="85"
+                                           class="btn btn-icon btn-sm btn-danger deleteDialog tip">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>
+                                        <label class="customcheck">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td class="sorting_1">Angelica Ramos</td>
+                                    <td>Chief Executive Officer (CEO)</td>
+                                    <td>London</td>
+                                    <td>47</td>
+                                    <td>2009/10/09</td>
+                                    <td>$1,200,000</td>
+                                    <td>
+                                        <a href="#" data-id="85"
+                                           class="btn btn-icon btn-sm btn-primary deleteDialog tip">
+                                            <i class="fa fa-pencil-square-o"></i>
+                                        </a>
+                                        <a href="#" data-id="85"
+                                           class="btn btn-icon btn-sm btn-danger deleteDialog tip">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>
+                                        <label class="customcheck">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td class="sorting_1">Angelica Ramos</td>
+                                    <td>Chief Executive Officer (CEO)</td>
+                                    <td>London</td>
+                                    <td>47</td>
+                                    <td>2009/10/09</td>
+                                    <td>$1,200,000</td>
+                                    <td>
+                                        <a href="#" data-id="85"
+                                           class="btn btn-icon btn-sm btn-primary deleteDialog tip">
+                                            <i class="fa fa-pencil-square-o"></i>
+                                        </a>
+                                        <a href="#" data-id="85"
+                                           class="btn btn-icon btn-sm btn-danger deleteDialog tip">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>
+                                        <label class="customcheck">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td class="sorting_1">Angelica Ramos</td>
+                                    <td>Chief Executive Officer (CEO)</td>
+                                    <td>London</td>
+                                    <td>47</td>
+                                    <td>2009/10/09</td>
+                                    <td>$1,200,000</td>
+                                    <td>
+                                        <a href="#" data-id="85"
+                                           class="btn btn-icon btn-sm btn-primary deleteDialog tip">
+                                            <i class="fa fa-pencil-square-o"></i>
+                                        </a>
+                                        <a href="#" data-id="85"
+                                           class="btn btn-icon btn-sm btn-danger deleteDialog tip">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>
+                                        <label class="customcheck">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td class="sorting_1">Angelica Ramos</td>
+                                    <td>Chief Executive Officer (CEO)</td>
+                                    <td>London</td>
+                                    <td>47</td>
+                                    <td>2009/10/09</td>
+                                    <td>$1,200,000</td>
+                                    <td>
+                                        <a href="#" data-id="85"
+                                           class="btn btn-icon btn-sm btn-primary deleteDialog tip">
+                                            <i class="fa fa-pencil-square-o"></i>
+                                        </a>
+                                        <a href="#" data-id="85"
+                                           class="btn btn-icon btn-sm btn-danger deleteDialog tip">
+                                            <i class="fa fa-trash"></i>
                                         </a>
                                     </td>
                                 </tr>

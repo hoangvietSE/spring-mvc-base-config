@@ -20,7 +20,8 @@
     <link href="<c:url value='/template/admin/css/sb-admin.css' />" rel="stylesheet" type="text/css" media="all"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="<c:url value='/template/admin/css/checkbox.css' />" rel="stylesheet" type="text/css" media="all"/>
-    <link href="<c:url value='/template/admin/sweet/sweetalert2.min.css' />" rel="stylesheet" type="text/css" media="all"/>
+    <link href="<c:url value='/template/admin/sweet/sweetalert2.min.css' />" rel="stylesheet" type="text/css"
+          media="all"/>
     <script src="<c:url value='/template/admin/vendor/jquery/jquery.min.js' />"></script>
     <script src="<c:url value='/template/admin/paging/jquery.twbsPagination.js' />"></script>
     <script src="<c:url value='/template/admin/sweet/sweetalert2.min.js' />"></script>
@@ -35,10 +36,8 @@
     <%@ include file="/common/admin/menu.jsp" %>
     <!-- Sidebar -->
 
-    <div class="content-wrapper">
-        <div class="container-fluid">
-            <dec:body/>
-        </div>
+    <div id="content-wrapper">
+        <dec:body/>
         <!-- footer -->
         <%@ include file="/common/admin/footer.jsp" %>
         <!-- footer -->
