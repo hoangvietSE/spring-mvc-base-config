@@ -16,7 +16,7 @@
         <sitemesh.version>2.4.2</sitemesh.version>
         <mysql.version>8.0.13</mysql.version>
         <hibernate.version>4.3.6.Final</hibernate.version>
-        <spring.data>1.11.5.RELEASE</spring.data>
+        <spring.data>1.11.23.RELEASE</spring.data>
         <spring.aspects>5.2.0.RELEASE</spring.aspects>
         <jstl.version>1.2</jstl.version>
         <jackson-version>2.9.5</jackson-version>
